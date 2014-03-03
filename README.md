@@ -32,3 +32,6 @@ Please note that, all of the codes here are for reference / evaluation purposes 
 Some of the python library behaves bit different and output different results compared to Octave / Matlab, these could be the result of numerical instability or just different implementation of the same algorithm. But most of the python codes uploaded here will exhibit similar result to its Octave counterpart. 
 
 Have fun !
+
+
+<b>Don't forget to change the path of the files being loaded in each and everyone of those python files</b>
