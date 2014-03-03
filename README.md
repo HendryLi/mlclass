@@ -8,10 +8,15 @@ I made it in Python since some of the Octave functionalities don't work on my co
 Thus I managed to recreate most if not all of the exercises in Python.
 
 These codes require the following libraries:
+
 1. Numpy (http://www.numpy.org), for matrix and array manipulations
+
 2. Scipy (http://www.scipy.org), used mainly on optimization / minimization functions
+
 3. Matplotlib (http://matplotlib.org), for plotting
+
 4. NLTK (http://www.nltk.org), mainly for preprocessing text in spam detection section
+
 5. Sci-Kit Learn (http://scikit-learn.org/stable/), used for the SVM section. This is a great machine learning library
 
 Most of my libraries are installed using either HomeBrew or pip, 
