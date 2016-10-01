@@ -12,6 +12,7 @@ import scipy
 from matplotlib import pyplot, cm
 from mpl_toolkits.mplot3d import Axes3D
 
+EX_DIRECTORY_PATH = '/Users/saburookita/Personal Projects/MachineLearningPy/'
 
 def part1():
     A = eye(5)
@@ -91,7 +92,7 @@ def plot(X, y):
 
 
 def part2_1():
-    data = genfromtxt( "/Users/saburookita/Downloads/mlclass-ex1-004/mlclass-ex1/ex1data1.txt", delimiter=',')
+    data = genfromtxt( EX_DIRECTORY_PATH + "ex1data1.txt", delimiter=',')
     X, y = data[:, 0], data[:, 1]
     m 	 = len(y)
     y 	 = y.reshape(m, 1)
@@ -101,7 +102,7 @@ def part2_1():
 
 
 def part2_2():
-    data = genfromtxt( '/Users/saburookita/Downloads/mlclass-ex1-004/mlclass-ex1/ex1data1.txt', delimiter=',')
+    data = genfromtxt( EX_DIRECTORY_PATH + 'ex1data1.txt', delimiter=',')
     X, y = data[:, 0], data[:, 1]
     m 	 = len(y)
     y 	 = y.reshape(m, 1)
@@ -127,7 +128,7 @@ def part2_2():
 
 
 def part2_4():
-    data = genfromtxt('/Users/saburookita/Downloads/mlclass-ex1-004/mlclass-ex1/ex1data1.txt', delimiter=',')
+    data = genfromtxt( EX_DIRECTORY_PATH + "/ex1data1.txt", delimiter=',')
     X, y = data[:, 0], data[:, 1]
     m 	 = len(y)
     y 	 = y.reshape(m, 1)
@@ -150,8 +151,9 @@ def part2_4():
     pyplot.show(block=True)
 
     fig = pyplot.figure()
-    ax 	= fig.gca(projection='3d')
-    pyplot.contourf(R, P, J_vals, logspace(-2, 3, 20))
+    # ax 	= fig.gca(projection='3d')
+    pyplot.contourf(R, P, J_vals.T, logspace(-2, 3, 20))
+    pyplot.plot(theta[0], theta[1], 'rx', markersize = 10)
     pyplot.show(block=True)
 
 
